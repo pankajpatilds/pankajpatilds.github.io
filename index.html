@@ -5,19 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pankaj Patil - Data Scientist</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #0073e6; color: white; padding: 10px 0; text-align: center; }
-        section { padding: 20px; }
-        .contact { background: #f4f4f4; padding: 20px; margin-top: 20px; }
-        .contact p { margin: 0; }
-        .profile-pic { max-width: 150px; border-radius: 50%; margin-top: 20px; } <!-- Added style for profile picture -->
+        body { 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f0f0f5; 
+            color: #333; 
+        }
+        header { 
+            background: #0073e6; 
+            color: white; 
+            padding: 20px 0; 
+            text-align: center; 
+            position: relative;
+        }
+        .profile-pic { 
+            max-width: 120px; 
+            border-radius: 50%; 
+            position: absolute; 
+            top: 50%; 
+            left: 20px; 
+            transform: translateY(-50%); 
+            border: 3px solid white; 
+        }
+        section { 
+            padding: 20px; 
+        }
+        .contact { 
+            background: #e6f7ff; 
+            padding: 20px; 
+            margin-top: 20px; 
+            border-left: 5px solid #0073e6;
+        }
+        .contact p { 
+            margin: 5px 0; 
+        }
+        .resume { 
+            background: #ffffff; 
+            padding: 20px; 
+            margin-top: 20px; 
+            border: 1px solid #ddd; 
+            border-radius: 5px; 
+        }
+        .resume h2 { 
+            margin-top: 0; 
+        }
+        footer { 
+            background: #0073e6; 
+            color: white; 
+            text-align: center; 
+            padding: 10px 0; 
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <header>
+        <img src="profile.jpg" alt="Pankaj Patil" class="profile-pic"> <!-- Profile picture -->
         <h1>Pankaj Patil</h1>
         <p>Data Scientist with 2.10 years of experience</p>
-        <img src="profile.jpg" alt="Pankaj Patil" class="profile-pic"> <!-- Added profile picture -->
     </header>
     <section>
         <h2>About Me</h2>
@@ -29,10 +75,17 @@
         <p>My recent project, "Predicting Vehicle Maintenance Cost for Fleet Management," involves using regression models like linear, random forest, and gradient boosting to predict maintenance costs. This project helps fleet managers with preventive scheduling, optimizing operational efficiency, reducing maintenance costs, and efficiently allocating resources by analyzing historical maintenance data.</p>
         <p>Advanced techniques used in this project include statistical modeling, evaluating model performance, fine-tuning, and optimizing the models using cross-validation techniques.</p>
     </section>
+    <section class="resume">
+        <h2>Resume / CV</h2>
+        <p>You can download my full resume <a href="resume.pdf" download>here</a>.</p>
+    </section>
     <section class="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:pankajnpatil2006@gmail.com">pankajnpatil2006@gmail.com</a></p>
         <p>Phone: 7756937973</p>
     </section>
+    <footer>
+        <p>&copy; 2024 Pankaj Patil</p>
+    </footer>
 </body>
 </html>
